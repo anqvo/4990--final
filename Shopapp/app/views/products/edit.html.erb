@@ -1,0 +1,15 @@
+<h3>Editing Product</h3>
+
+<br>
+
+<%= render 'form', product: @product %>
+
+<br>
+
+<div class="delete">
+	<%= link_to 'Delete this Product', :product, method: :delete, data: { confirm: 'Delete this product?' }, class: 'btn btn-default' %>
+</div>
+
+<br><br><br>
+
+<%= link_to 'Cancel', products_path, class: 'btn btn-default' %>

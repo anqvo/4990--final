@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skate Shop</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  </head>
+
+  <body>
+
+		<div class="banner">
+			<div class="wrapper">
+				<h1>
+					<%= link_to image_tag("penny-logo.png", :height => 90, :width => 90), root_path %>
+					<%= link_to "Skate Shop", root_path %>
+				</h1>
+			</div>
+		</div>
+
+		<div class="nav">
+			<div class="nav_left">
+				<%= link_to "Home", root_path %>
+				<%= link_to "Shop", products_path %>
+			</div>
+
+			<div class="nav_right">
+				<%= link_to "View Your Cart", cart_path %>
+				<% if user_signed_in? %>
+				  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+				<% else %>
+					<%= link_to "Log in", new_user_session_path %>
+				<% end %>
+			</div>
+		</div>
+
+
+		<div class="main_wrap">
+			<p class="notice"><%=  notice %></p>
+			<p class="alert"><%= alert %></p>
+
+	    <%= yield %>
+		</div>
+
+  </body>
+</html>

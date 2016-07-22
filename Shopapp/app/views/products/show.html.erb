@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<div class="showpage">
+	<p>
+	  <strong class="show">Product:</strong>
+		<%= @product.title %>
+	</p>
+
+<br>
+
+	<p>
+	  <strong class="show">Description:</strong>
+	  <%= @product.description %>
+	</p>
+
+	<!-- <p>
+	  <strong>Image url:</strong>
+	  <%= @product.image_url %>
+	</p> -->
+
+<br>
+
+	<p>
+	  <strong class="show">Price:</strong>
+	  <%= number_to_currency(@product.price, :unit => '$') %>
+	</p>
+</div>
+
+<br>
+
+<% if user_signed_in? && current_user.admin? %>
+	<%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-default' %>
+<% end %>
+
+<br><br><br><br>
+
+<%= link_to 'Return to Shop', products_path, class: 'btn btn-default' %>

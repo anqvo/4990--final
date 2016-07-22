@@ -1,0 +1,165 @@
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: #ff755c;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid #ff755c;
+  padding: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "proxima-nova", sans-serif;
+}
+
+.wrapper {
+	width: 1140px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.banner {
+	background: #30313d url(bg-pattern.svg);
+	background-repeat: repeat;
+}
+.banner h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 1% 0;
+	margin: 0 9%;
+	font-size: 2.3em;
+	line-height: 0.85;
+	text-decoration: none;
+}
+.banner a {
+	line-height: 0.85;
+	color: #ffffff;
+	padding: 0 20px 0 20px;
+	text-decoration: none;
+	&:hover {
+		color: #4ad7b1;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+.nav {
+	background: #4ad7b1;
+}
+.nav a {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 700;
+
+	&:hover {
+		color: #4ad7b1;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+.nav_left a, .nav_right a {
+	line-height: 70px;
+	color: #ffffff;
+	padding: 1% 20px 0 20px;
+	text-decoration: none;
+}
+.nav_left {
+	margin: 0 0 0 28%;
+	float: left;
+}
+.nav_right {
+	margin: 0 28% 0 0;
+	float: right;
+}
+
+.main_wrap {
+	width: 40%;
+	float: left;
+	margin: 20px 29% 0 29%;
+}
+.main_wrap a {
+	color: #000;
+	&:hover {
+		color: currentColor;
+		text-decoration: none;
+	}
+}
+
+.cart {
+	list-style: none;
+}
+.cart_item {
+	text-transform: uppercase;
+}
+.total {
+	padding-top: 4em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+table {
+	empty-cells: show;
+}
+
+.cat {
+	 border: 2px;
+}
+.category {
+	font-size: 1.5em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.cat1, .cat2, .cat3, .cat4 {
+	font-size: 1.3em;
+	font-weight:300;
+	color: #4ad7b1;
+
+	&:hover {
+		color: #4ad7b1;
+		transition: all 0.001s ease-in-out;
+	}
+}
+
+.delete {
+	&:hover {
+		color: red;
+	}
+}
+
+.show {
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
